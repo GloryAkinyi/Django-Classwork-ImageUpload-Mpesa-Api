@@ -1,0 +1,17 @@
+{% extends 'inner-page.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% block body %}
+<h2>Welcome {{member.username}}.You're logged in as an admin!</h2>
+
+<a href="{% url 'upload' %}" class="btn btn-warning">Upload</a>
+
+{% endblock %}}
+</body>
+</html>
